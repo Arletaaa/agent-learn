@@ -43,6 +43,14 @@
 - [LangChain RAG 教程](https://python.langchain.com/docs/tutorials/rag/) — 官方 RAG 全流程教程（文档加载→切分→向量化→检索→生成）
 - [DeepLearning.AI - Building and Evaluating Advanced RAG](https://www.deeplearning.ai/short-courses/advanced-retrieval-for-ai/) — 高级 RAG 技术课程（查询改写、重排序等）
 
+## Multi-Agent 协作（阶段四）
+
+- [Anthropic - Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — 官方权威文章，多 Agent 系统章节讲解 Orchestrator-Worker 等编排模式
+- [Anthropic - How We Built Our Multi-Agent Research System](https://www.anthropic.com/engineering/built-multi-agent-research-system) — Orchestrator-Worker 模式的生产级实践拆解
+- [LangGraph - Multi-Agent 官方文档](https://langchain-ai.github.io/langgraph/concepts/multi_agent/) — Supervisor / Swarm / Handoff / 网络四种拓扑
+- [LangGraph Supervisor 库](https://github.com/langchain-ai/langgraph-supervisor) — 官方 Supervisor 节点封装
+- [CrewAI - Processes 文档](https://docs.crewai.com/en/concepts/processes) — Sequential / Hierarchical 流程官方说明
+
 ## 待探索
 
 - [ ]

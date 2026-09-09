@@ -31,7 +31,8 @@
 
 - [X] Prompt Engineering 进阶（System Prompt 设计、Few-shot、Chain-of-Thought） ✅
 - [X] RAG（检索增强生成）与 Agent 结合 ✅
-- [ ] Multi-Agent 协作模式（顺序 / 并行 / 辩论 / 层级）
+- [X] Multi-Agent 协作模式（顺序 / 并行 / 辩论 / 层级） ✅
+- [X] Agent Skills（SKILL.md 能力封装，按需加载的工作流指令） ✅
 - [ ] Agent 安全性（Prompt Injection 防御、权限控制）
 - [ ] 结构化输出（JSON Mode、Pydantic、工具调用）
 

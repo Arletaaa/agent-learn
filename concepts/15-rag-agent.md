@@ -33,12 +33,12 @@ RAG 解决这个问题的核心价值：
 
 ### 索引阶段（离线，建库一次，4 步）
 
-| 步骤 | 动作 | 说明 |
-|------|------|------|
-| 1. Load | 加载文档 | 把数据源（网页/PDF/数据库）读成 `Document` 对象 |
-| 2. Split | 切分 | 用 Text Splitter 把大文档切成小块（chunk） |
-| 3. Embed | 向量化 | Embedding 模型把每块转成"语义向量" |
-| 4. Store | 存储 | 向量和文本一起存进 VectorStore（向量数据库） |
+| 步骤     | 动作     | 说明                                             |
+| -------- | -------- | ------------------------------------------------ |
+| 1. Load  | 加载文档 | 把数据源（网页/PDF/数据库）读成`Document` 对象 |
+| 2. Split | 切分     | 用 Text Splitter 把大文档切成小块（chunk）       |
+| 3. Embed | 向量化   | Embedding 模型把每块转成"语义向量"               |
+| 4. Store | 存储     | 向量和文本一起存进 VectorStore（向量数据库）     |
 
 LangChain 官方示例：
 
@@ -83,12 +83,12 @@ vector_store.add_documents(all_splits)
 
 进阶模式（按复杂度递进）：
 
-| 模式 | 说明 |
-|------|------|
-| 1. Skills-guided retrieval | Agent 加载"搜索技能"（用哪个索引、怎么构造查询、引用格式），再调用检索工具 |
-| 2. Rubric-checked grounding | 检索→草稿→评分子 Agent 检查答案是否基于检索材料，不通过则修订 |
-| 3. Todo-driven investigation | Agent 用规划工具把复杂问题拆成多个搜索项，逐项检索后综合 |
-| 4. Retrieve, offload, delegate | 检索到的 chunk 写入文件系统，并行子 Agent 分析，避免主上下文爆炸 |
+| 模式                           | 说明                                                                       |
+| ------------------------------ | -------------------------------------------------------------------------- |
+| 1. Skills-guided retrieval     | Agent 加载"搜索技能"（用哪个索引、怎么构造查询、引用格式），再调用检索工具 |
+| 2. Rubric-checked grounding    | 检索→草稿→评分子 Agent 检查答案是否基于检索材料，不通过则修订            |
+| 3. Todo-driven investigation   | Agent 用规划工具把复杂问题拆成多个搜索项，逐项检索后综合                   |
+| 4. Retrieve, offload, delegate | 检索到的 chunk 写入文件系统，并行子 Agent 分析，避免主上下文爆炸           |
 
 **核心转变**：在 Agent 中，**检索变成一个工具调用**——Agent 决定何时搜、搜什么、怎么用结果，而不是把检索结果硬拼进每轮 prompt。这对应已学的 Function Calling 机制（工具 schema + 模型自主决策）。
 
@@ -97,6 +97,7 @@ vector_store.add_documents(all_splits)
 > RAG 应用极易遭受**间接提示注入**。检索到的文档里可能藏着伪装成指令的文字。因为检索内容和 System Prompt **共享同一上下文窗口**，模型可能去执行文档里的指令，而不是你的提示。
 
 **防御现状**：
+
 - **没有任何 prompt 或分隔符策略能完全防住**间接注入
 - 缓解手段：提示词要求"把检索内容当纯数据"、加 `# Source:` 头区分元数据与正文——**有帮助但不可靠**
 - 真正可靠的办法：**对输出做校验**（确认答案引用的文档路径、核对声明与检索材料是否一致）

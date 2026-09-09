@@ -28,6 +28,8 @@
 
 - [14 - System Prompt 设计方法论](./14-system-prompt-design.md) — 四要素框架，Few-shot / CoT / 分层设计，Agent 指令设计
 - [15 - RAG + Agent 联合架构](./15-rag-agent.md) — 检索增强生成，索引四步管线，检索作为工具调用，间接注入安全
+- [16 - Multi-Agent 协作模式](./16-multi-agent-patterns.md) — 顺序/并行/辩论/层级四种协作模式，编排维度（拓扑×通信×决策权）与选型
+- [17 - Agent Skills](./17-agent-skills.md) — SKILL.md 技能封装，按需加载的工作流指令，与 MCP 的分工互补
 
 ## 阶段五：进阶实践
 

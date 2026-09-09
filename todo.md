@@ -31,7 +31,8 @@
 
 - [X] System Prompt 设计方法论 ✅
 - [X] RAG + Agent 联合架构 ✅
-- [ ] Multi-Agent 协作模式
+- [X] Multi-Agent 协作模式 ✅
+- [X] Agent Skills（SKILL.md 技能封装与制作） ✅
 - [ ] Agent 安全性设计
 - [ ] 结构化输出与验证
 

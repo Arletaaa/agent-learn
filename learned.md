@@ -4,6 +4,8 @@
 
 ## 已掌握概念
 
+- [🔵 理解] Agent Skills（技能封装） — 2026-08-23 — SKILL.md 按需加载的工作流指令，与 Prompt 的区别、与 MCP 的分工互补，渐进式披露设计
+- [🔵 理解] Multi-Agent 协作模式 — 2026-08-23 — 顺序/并行/辩论/层级四种协作模式，编排维度（拓扑×通信×决策权），框架对照与选型清单
 - [🔵 理解] Harness Engineering（驾驭工程） — 2026-07-22 — AI Agent 运行时的工程范式，LLM 调用的编排与框架化
 - [🟢 掌握] MCP 协议（Model Context Protocol） — 2026-07-22 — 开放协议，LLM 与外部工具的标准化接口；深入掌握了 stdio/HTTP SSE 传输机制和 Server 三层架构
 - [🔵 理解] Claude Code — 2026-07-22 — Anthropic 的终端内 AI 编程 Agent，终端原生 + MCP 原生
@@ -30,6 +32,8 @@
 - [✅] [project-06-crewai](../projects/project-06-crewai/) — 2026-08-05 — 三人调研团队（研究员→分析师→写作者），CrewAI Sequential 流水线
 - [✅] [project-07-autogen](../projects/project-07-autogen/) — 2026-08-13 — 双 Agent 代码执行闭环 + GroupChat 多角色协作
 - [✅] [project-08-openai-agents](../projects/project-08-openai-agents/) — 2026-08-15 — 客服 Handoff 系统 + Session 记忆 + Guardrail 护栏
+- [✅] [project-09-decision-challenge](../projects/project-09-decision-challenge/) — 2026-08-23 — 第一个 Agent Skill：反谄媚决策质询（三阶段），已发布 GitHub + skills.sh（v3）
+- [✅] [project-10-dev-mentor](../projects/project-10-dev-mentor/) — 2026-08-23 — 第二个 Agent Skill：引导式开发（AI 辅助不代写），已发布 GitHub（v2）+ 首测 Java 猜数字游戏
 
 ## 阶段性了解
 

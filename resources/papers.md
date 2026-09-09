@@ -23,6 +23,9 @@
 ### Multi-Agent
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — 微软 AutoGen
 - [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) — 软件开发的 Multi-Agent 系统
+- [Improving Factuality and Reasoning in Language Models through Multiagent Debate](https://arxiv.org/abs/2305.14325) — Multi-Agent Debate 开创性论文（Du et al., 2023）
+- [S2-MAD: Breaking the Token Barrier to Enhance Multi-Agent Debate Efficiency](https://aclanthology.org/2025.naacl-long.475/) — NAACL 2025，降低辩论模式 token 开销
+- [Efficient Multi-Agent Reasoning via Confidence-Guided Adaptive Debate](https://icml.cc/virtual/2026/poster/60593) — ICML 2026，按置信度自适应调节辩论轮次
 
 ## 待阅读
 
